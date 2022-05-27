@@ -5,6 +5,7 @@ const StyledParagraph = styled.p`
 	border: 2px solid #333;
 	border-radius: 100px;
 	text-align: center;
+	background: rgba(255, 255, 255, .5);
 
 	&.activo {
 		background: pink;
@@ -15,7 +16,7 @@ const Escena = ({ frases, estado }) =>
 	frases.map((frase, index) => {
 		return (
 			<StyledParagraph key={index + "-frases"} className={index === estado && "activo"}>
-				{frase}
+				{frase.text}
 			</StyledParagraph>
 		);
 	});

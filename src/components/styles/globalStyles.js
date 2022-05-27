@@ -2,10 +2,15 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
+body {
+	background: url("${props => props.background}") center no-repeat;
+	background-size:cover;
+}
+
 html {
 	box-sizing: border-box;
 	font-size: 16px;
-
+	height: 100%;
 	color: #333;
 	
 	@media (max-width: 767px) {
@@ -23,6 +28,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+	height: 100%
 }
 
 #root {

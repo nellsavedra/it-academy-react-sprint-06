@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const WelcomePage = () => {
 	const [logged, setLogged] = useState(false);
-	
+
 	return (
 		!logged && (
 			<div className="welcome-container">
